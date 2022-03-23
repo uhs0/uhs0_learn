@@ -1,2 +1,2 @@
 # uhs0_learn
-This repository records the process of my learning of computer sceience and techonologies!
+This branch collects my programming simple c languange problems.
