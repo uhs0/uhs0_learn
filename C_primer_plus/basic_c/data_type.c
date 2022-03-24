@@ -30,28 +30,28 @@ void show_double(double x){
     show_bytes((byte_pointer)&x,sizeof(double));
 }
 
-
 int main()
 {
 
     int number=-100;
     unsigned int un_number=100;
     short s_number=-5;
-    unsigned short un_s_number=5;
     long l_number=-2345;
-    unsigned long un_l_number=2345;
-    long long ll_un_number=-12232;
-    unsigned long long un_ll_number=12232;
     float f_number=3.141592;
     double d_number=3.1415926535;
 
-    printf("dec=%d; octal=%o; hex=%x\n",number,number,number);
-    printf("dec=%d; octal=%#o; hex=%#x\n",un_number,un_number,un_number);
+    // printf("dec=%d; octal=%o; hex=%x\n",number,number,number);
+    // printf("dec=%d; octal=%#o; hex=%#x\n",un_number,un_number,un_number);
 
-    show_int(number);
-    show_short(s_number);
-    show_long(l_number);
-    show_float(f_number);
-    show_double(d_number);
+    printf("float number f_number is: %f\n", f_number);
+    printf("float number f_number is: %e\n", f_number);
+    printf("float number f_number is: %a\n", f_number);
+
+
+    // show_int(number);
+    // show_short(s_number);
+    // show_long(l_number);
+    // show_float(f_number);
+    // show_double(d_number);
 
 }
