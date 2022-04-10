@@ -1,5 +1,5 @@
 flightsbooking: flights.o flightsbook.o
-	gcc -o flightbooking flights.o flightsbook.o 
+	gcc -o flightsbooking flights.o flightsbook.o 
 flights.o: flights.h flights.c
 	gcc -c flights.c
 flightsbook.o: flights.h flightsbook.c 

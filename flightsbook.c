@@ -4,14 +4,15 @@
 
 int main(int argc, char *argv[])
 {
-    extern int global_number;
-    int local_number;
-    local_number=global_number;
-
-
     char clientchoices;
+    struct flightseat plane_one[FLIGHTSEATS];
+    struct flightseat *planeone=plane_one;
+
     displaymenu();
-    initializeseat();
-    clientchoices = checkoperations();
-    clientoperations(clientchoices);
+    initializeseat(planeone);
+
+    while ((clientchoices = checkoperations()) != 'f')
+        clientoperations(clientchoices, plane_one);
+
+    printf("Good bye!");
 }
