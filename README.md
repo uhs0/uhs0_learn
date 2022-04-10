@@ -1,4 +1,4 @@
-###   In this case, i have learned some problems which would be happened
+### In this case, i have learned some problems which would be happened
 ### cerelessly, especially when it comes to mixing with pointer to struct 
 ### array. We should be careful in using pointer to struct array. The 
 ### following is my experience: 
